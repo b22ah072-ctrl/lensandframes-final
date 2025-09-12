@@ -1,0 +1,39 @@
+[build]
+  command = "npm run build:client"
+  functions = "netlify/functions"
+  publish = "dist/spa"
+
+
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+
+# Cache hashed build assets aggressively
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache images
+[[headers]]
+  for = "/**/*.({png|jpg|jpeg|gif|webp|svg})"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Prevent HTML from long caching to enable instant updates
+[[headers]]
+  for = "/**/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
+
+# SPA fallback for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
