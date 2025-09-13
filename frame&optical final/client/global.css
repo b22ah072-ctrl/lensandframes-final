@@ -124,6 +124,13 @@
   .animate-marquee-rtl {
     animation: marquee-rtl 25s linear infinite;
   }
+  /* Faster marquee animation on small screens */
+  @media (max-width: 640px) {
+    .animate-marquee-rtl {
+      animation-duration: 12s;
+    }
+  }
+
   .mask-fade-x {
     -webkit-mask-image: linear-gradient(
       to right,
