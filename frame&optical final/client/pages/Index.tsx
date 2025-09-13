@@ -721,7 +721,7 @@ export default function Index() {
             <h2 className="text-center text-2xl font-semibold">Our Trusted Eyewear Partners</h2>
             <div className="mt-8 relative overflow-hidden">
               <div className="mask-fade-x">
-                <div className="flex items-center gap-20 animate-marquee-rtl" aria-label="Partner logos carousel">
+                <div className="flex items-center gap-8 md:gap-20 animate-marquee-rtl whitespace-nowrap" aria-label="Partner logos carousel">
                   {[
                     { alt: "Ray‑Ban", src: "https://cdn.builder.io/api/v1/image/assets%2F29bacb3ca6f64d399ffc1c3b10eddcb2%2Ffb7f4c4a68874f5e844ef55993586b9d?format=webp&width=800" },
                     { alt: "Oakley", src: "https://cdn.builder.io/api/v1/image/assets%2F29bacb3ca6f64d399ffc1c3b10eddcb2%2F25aef494d672486aad847627a1a830a2?format=webp&width=800" },
