@@ -6,6 +6,9 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/server.ts" },
+    { "src": "/assets/(.*)", "dest": "/dist/spa/assets/$1" },
+    { "src": "/(.*).(css|js|map|png|jpg|jpeg|svg|ico|webp|woff2|ttf)", "dest": "/dist/spa/$1.$2" },
+    { "src": "/(robots.txt|sitemap.xml)", "dest": "/dist/spa/$1" },
     { "src": "/(.*)", "dest": "/dist/spa/index.html" }
   ]
 }
