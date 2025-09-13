@@ -361,7 +361,7 @@ export default function Index() {
       case "hero":
         return (
           <section id="home" aria-label="Hero" className="relative" key="hero">
-            <div className="relative h-[60vh] min-h-[320px] sm:h-[75vh] sm:min-h-[560px] overflow-hidden rounded-b-[2rem] bg-black">
+            <div className="hero-section relative h-[60vh] min-h-[320px] sm:h-[75vh] sm:min-h-[560px] overflow-hidden bg-black">
               {slides.map((s, i) => (
                 <img
                   key={i}
