@@ -42,7 +42,7 @@ export default function Footer() {
           <ul className="space-y-2 text-neutral-400 text-sm">
             <li><a className="hover:text-white" href="tel:+97433509888">+974 3350 9888</a></li>
             <li><a className="hover:text-white" href="mailto:Lensandframesqa@gmail.com">Lensandframesqa@gmail.com</a></li>
-            <li>Al Sadd,Al Difaaf St, Doha, Qatar</li>
+            <li>Al Sadd , Doha , Qatar</li>
           </ul>
         </div>
       </div>
