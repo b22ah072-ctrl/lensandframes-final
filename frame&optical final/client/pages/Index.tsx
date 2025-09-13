@@ -792,7 +792,7 @@ export default function Index() {
                       <li>
                         Email: <a className="underline hover:text-white" href="mailto:Lensandframesqa@gmail.com">Lensandframesqa@gmail.com</a>
                       </li>
-                      <li>Address: Muntaza, Near Al Meera, Doha, Qatar</li>
+                      <li>Address: Al Sadd , Doha , Qatar</li>
                     </ul>
                   </div>
                   <div className="rounded-xl overflow-hidden border border-white/10">
